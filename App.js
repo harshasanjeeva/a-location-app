@@ -29,7 +29,7 @@ const instructions = Platform.select({
 
 var { height, width } = Dimensions.get("window");
 
-const appUrl = "http://192.168.43.62:3001/";
+const appUrl = "http://18.188.126.31:3001/";
 
 type Props = {};
 export default class App extends Component<Props> {

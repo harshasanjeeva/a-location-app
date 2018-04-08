@@ -1,7 +1,7 @@
 {
   "name": "location-frontend",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://18.188.126.31:3001/",
   "private": true,
   "dependencies": {
     "moment": "^2.22.0",

@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/test1');
+mongoose.connect('mongodb://localhost/locationtracker');
 
 
 var index = require('./routes/index');
@@ -25,6 +25,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(express.static(path.resolve(__dirname ,'build')));
 
 app.use('/', index);
 app.use('/users', users);
